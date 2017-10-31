@@ -19,7 +19,7 @@ function commonCharacterCount(s1, s2) {
             x++;
         }
     }
-    return temp.length;
+    return temp;
 }
 
 console.log(commonCharacterCount("aabcc", "adcaa"));
