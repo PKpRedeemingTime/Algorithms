@@ -8,18 +8,19 @@ commonCharacterCount(s1, s2) = 3.
 */
 
 function commonCharacterCount(s1, s2) {
-    var temp = [];
+    var count = 0;
     for (var i = 0; i < s2.length; i++) {
         var x = 0;
         while(x < s1.length) {
             if(s1[x] == s2[i]) {
-                temp.push(s2[i]);
+                count++;
+                i++;
                 break;
             }
             x++;
         }
     }
-    return temp;
+    return count;
 }
 
 console.log(commonCharacterCount("aabcc", "adcaa"));
