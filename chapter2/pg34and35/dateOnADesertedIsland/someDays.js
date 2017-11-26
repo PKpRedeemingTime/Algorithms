@@ -3,7 +3,7 @@ function weekdayNum() {
 }
 
 function someDays() {
-    var weekday = require('./weekdayNameExport')
+    var weekday = require('./weekdayNameExport');
     for(var i = 1; i < 18; i++) {
         var num = weekdayNum();
         var day = weekday.weekdayName(num);
